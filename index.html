@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./assets/css/aos.css">
 
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
 
@@ -33,15 +34,21 @@
 
                     <nav class="navbar">
                         <ul class="menu">
-                            <li class="active">index.html<a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="works.html">Works</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li class="active"><a href="index.html" data-i18n="home">Home</a></li>
+                            <li><a href="about.html" data-i18n="about">About</a></li>
+                            <li><a href="works.html" data-i18n="works">Works</a></li>
+                            <li><a href="certificates.html" data-i18n="certificates">Certificates</a></li>
+                            <li><a href="contact.html" data-i18n="contact">Contact</a></li>
                         </ul>
-                        <a href="./contact.html" class="theme-btn">Contact Moaz</a>
+                        <a href="./contact.html" class="theme-btn" data-i18n="contactMe">Contact Moaz</a>
                     </nav>
 
-                    <a href="https://g.top4top.io/f_y2jVPuVnPKI2LgfsQ63Y6w/1730560218/32265bgsf1.pdf" class="theme-btn">Download CV</a>
+                    <a href="https://g.top4top.io/f_y2jVPuVnPKI2LgfsQ63Y6w/1730560218/32265bgsf1.pdf" class="theme-btn" data-i18n="downloadCv">Download CV</a>
+
+                    <div class="lang-switch">
+                        <button class="lang-btn" data-lang="en">EN</button>
+                        <button class="lang-btn" data-lang="ar">AR</button>
+                    </div>
 
                     <div class="show-menu">
                         <span></span>
@@ -64,9 +71,9 @@
                                 <img src="./assets/images/mo.png" alt="About Me">
                             </div>
                             <div class="infos">
-                                <h4>Application programmer</h4>
-                                <h1>Moaz Emad.</h1>
-                                <p>I am Moaz Imad, a skilled programmer with a talent for developing web and applications using languages ​​such as HTML, Java, Flutter, and native language.</p>
+                                <h4 data-i18n="heroSubtitle">Application programmer</h4>
+                                <h1 data-i18n="heroTitle">Moaz Emad.</h1>
+                                <p data-i18n="heroDesc">I am Moaz Imad, a skilled programmer with a talent for developing web and applications using languages ​​such as HTML, Java, Flutter, and native language.</p>
                                 <a href="#" class="about-btn">
                                     <img src="./assets/images/icon.svg" alt="Button">
                                 </a>
@@ -255,10 +262,11 @@
                         <img src="./assets/images/logo.svg" alt="Logo">
                     </a>
                     <ul class="footer-menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="works.html">Works</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html" data-i18n="home">Home</a></li>
+                        <li><a href="about.html" data-i18n="about">About</a></li>
+                        <li><a href="works.html" data-i18n="works">Works</a></li>
+                        <li><a href="certificates.html" data-i18n="certificates">Certificates</a></li>
+                        <li><a href="contact.html" data-i18n="contact">Contact</a></li>
                     </ul>
                     <p class="copyright">
                         &copy; All rights reserved by <span>WordPress River</span>
@@ -274,5 +282,6 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/lang.js"></script>
 </body>
 </html>
