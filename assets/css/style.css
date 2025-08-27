@@ -36,6 +36,35 @@ body {
     background: #0F0F0F;
     line-height: 19.2px;
 }
+body[dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+}
+body[dir="rtl"] .header-area .menu {
+    flex-direction: row-reverse;
+}
+
+.lang-switch {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.lang-switch button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.certificate-item:hover {
+    animation: float 1s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
 img {
     max-width: 100%;
 }
